@@ -1,5 +1,5 @@
-// import { Landing } from "../../sections/Landing/Landing";
-// import SectionProfile from "../../sections/SectionProflile/SectionProfile";
+import { Landing } from "../../sections/Landing/Landing";
+import SectionProfile from "../../sections/SectionProflile/SectionProfile";
 // import MapWrapper from "../MapWrapper/MapWrapper";
 import { GitHub, Mail } from "../../assets";
 import {
@@ -18,14 +18,14 @@ const Background = () => {
     <Container>
       <Section bgColor="white">
         <Background1 />
-        {/*<Landing />*/}
+        <Landing />
         <ContentWrapper>
           {/*<MapWrapper />*/}
         </ContentWrapper>
       </Section>
       <Section style={{ zIndex: "0" }} bgColor="#3d799b" id="section-profile">
         <Background2 />
-        {/*<SectionProfile />*/}
+        <SectionProfile />
         <Footer>
           <FooterIcons src={GitHub} />
           <FooterIcons src={Mail} />

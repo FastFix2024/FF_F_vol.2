@@ -3,7 +3,7 @@ import { HeaderBg } from "../../../assets";
 import { FastFixLogo } from "../../../assets";
 
 export const HeaderWpapper = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 `;
 
 export const HeaderComponent = styled.header`

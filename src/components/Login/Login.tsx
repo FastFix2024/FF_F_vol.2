@@ -1,11 +1,12 @@
 import * as Yup from "yup";
 import { LoginContent, LoginForm, ButtonsContainer, ButtonWrapper } from './styles'
-import { LOGIN_FORM_NAMES, LoginFormValues } from './types'
 import { useFormik } from 'formik'
 import { useAppDispatch } from '../../store/hooks'
 import Input from '../Input/Input'
 import Button from '../Button/Button'
 import { authSliceActions } from '../../store/redux/authSlice/authSlice'
+import { LOGIN_FORM_NAMES, LoginFormValues } from "./types"
+
 
 const schema = Yup.object().shape({
   [LOGIN_FORM_NAMES.EMAIL]: Yup.string().required("email required").email("Invalid email format"),
@@ -41,22 +42,23 @@ const Login = () => {
           value={formik.values.email}
           error={formik.errors.email}
         />
-        <Input
-          name="password"
-          type="password"
-          placeholder="KENNWORT"
-          label="Kennwort"
-          onInputChange={formik.handleChange}
-          value={formik.values.password}
-          error={formik.errors.password}
-        />
+        <div>
+          <Input
+            name="password"
+            type={"password"}
+            placeholder="KENNWORT"
+            label="Kennwort"
+            onInputChange={formik.handleChange}
+            value={formik.values.password}
+            error={formik.errors.password}
+          />
+          <p style={{ position: "relative", top: "-15px" }}>Forgot your password?</p>
+        </div>
 
-        <div>Forgot your password feature is not active yet</div>
-        
         <ButtonsContainer>
           <ButtonWrapper>
             <Button name="SUBMIT" type="submit" />
-          </ButtonWrapper>    
+          </ButtonWrapper>
         </ButtonsContainer>
       </LoginForm>
     </LoginContent>

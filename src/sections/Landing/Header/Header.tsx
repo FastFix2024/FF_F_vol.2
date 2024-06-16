@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from '../../../store/hooks'
 import { userAreaVisibilitySliceActions, userAreaVisibilitySliceSelectors } from '../../../store/redux/userAreaVisiblitySlice/userAreaVisiblitySlice'
 import { HeaderWpapper, HeaderComponent, HeaderComponentContainer, HeaderMotto1, HeaderMotto2, NavMenu, NavMenuButtonContainer, HeaderText, SeparationLine, HeaderLogoContainer, HeaderLogo, BackToTopButton } from './styles'
 import Button from '../../../components/Button/Button'
+import { up } from "../../../assets"
 
 
 export const Header = () => {

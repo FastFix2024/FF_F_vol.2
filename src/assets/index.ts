@@ -11,3 +11,5 @@ export { default as Logout } from "./logout.svg";
 export { default as DeleteUser } from "./delete_user_profile.svg";
 export { default as GitHub } from "./github.svg";
 export { default as Mail } from "./mail.svg";
+export { default as HidePassword } from "./view_hide_icon.svg";
+export { default as ShowPassword } from "./view_show_icon.svg";

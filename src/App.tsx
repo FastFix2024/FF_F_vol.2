@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <Header />
-      {/* <Background />   */}
+       <Background />
     </>
   );
 };
