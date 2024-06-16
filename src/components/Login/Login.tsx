@@ -1,11 +1,11 @@
 import * as Yup from "yup";
-import Button from 'components/Button/Button'
-import Input from 'components/Input/Input'
-import { useFormik } from 'formik'
-import { useAppDispatch } from 'store/hooks'
-import { authSliceActions } from 'store/redux/authSlice/authSlice'
 import { LoginContent, LoginForm, ButtonsContainer, ButtonWrapper } from './styles'
 import { LOGIN_FORM_NAMES, LoginFormValues } from './types'
+import { useFormik } from 'formik'
+import { useAppDispatch } from '../../store/hooks'
+import Input from '../Input/Input'
+import Button from '../Button/Button'
+import { authSliceActions } from '../../store/redux/authSlice/authSlice'
 
 const schema = Yup.object().shape({
   [LOGIN_FORM_NAMES.EMAIL]: Yup.string().required("email required").email("Invalid email format"),

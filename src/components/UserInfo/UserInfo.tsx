@@ -1,9 +1,9 @@
 import axios from 'axios'
-import SelectInput from 'components/SelectInput/SelectInput'
 import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { DateContainer, DateInput } from './styles'
 import { InsuranceTypes } from './types'
+import SelectInput from '../SelectInput/SelectInput'
 
 
 const UserInfo = () => {
